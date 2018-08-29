@@ -9,7 +9,7 @@ function multiply(e){
     let c= document.querySelector('#fn').value;
     let d= document.querySelector('#sn').value;
     if(c==''||d==''){ 
-        document.querySelector('.message').textContent='Check the Input'; 
+        document.querySelector('.message').innerHTML='<em>Check the Input<em>'; 
         e.preventDefault();
         }else{
         let multi=c*d;
@@ -25,7 +25,7 @@ function divide(e){
     var c= document.querySelector('#fn').value;
     var d= document.querySelector('#sn').value;
     if(c==''||d==''){ 
-    document.querySelector('.message').textContent='Check the Input'; 
+    document.querySelector('.message').textContentinnerHTML='<em>Check the Input<em>'; 
     e.preventDefault();
     }else{
     let div=c/d;
