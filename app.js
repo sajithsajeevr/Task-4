@@ -5,15 +5,15 @@ document.querySelector('#divideBttn').addEventListener('click',divide);
 
 
 function multiply(e){
-    console.log('clicked');
+
     let c= document.querySelector('#fn').value;
     let d= document.querySelector('#sn').value;
     if(c==''||d==''){ 
-        document.querySelector('#response').textContent='Check the Input'; 
+        document.querySelector('.message').textContent='Check the Input'; 
         e.preventDefault();
         }else{
         let multi=c*d;
-        document.querySelector('#response').textContent=`${multi}`;
+        document.querySelector('.message').innerHTML=`<h4>${multi}</h4>`;
         }
     //document.querySelector('#response').innerHTML=`${multi}`;
     e.preventDefault();
@@ -21,15 +21,15 @@ function multiply(e){
 }
 
 function divide(e){
-    console.log('divide clicked');
+    
     var c= document.querySelector('#fn').value;
     var d= document.querySelector('#sn').value;
     if(c==''||d==''){ 
-    document.querySelector('#response').textContent='Check the Input'; 
+    document.querySelector('.message').textContent='Check the Input'; 
     e.preventDefault();
     }else{
     let div=c/d;
-    document.querySelector('#response').textContent=`${div}`;
+    document.querySelector('.message').innerHTML=`<h4>${div}</h4>`;
     }
     e.preventDefault();
 }

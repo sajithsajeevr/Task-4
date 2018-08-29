@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
     <title>Document</title>
 </head>
 <body>
-    <h1>Multiply or Divide Numbers</h1>
-    <form >
-<input type="number" id="fn" name="firstNumber"  ><br><br>
-<input type="number" id="sn" name="secondNumber">
-<br><br>
-<input type="button" value="Multiply" id="multiplyBttn">
-<input type="button" value="Divide" id="divideBttn">
-
-    </form>
-    <p id="response"></p>
+    <pre><code>
+    <div class="container" style="align-content: center">
+<h2>Multiply or Divide Numbers</h2>
+<div id="calculator"  >
+<h6>Input Numbers to perform multiplication or Division</h6>
+<input type="number" id="fn" placeholder="first number"><input type="number" id="sn" placeholder="second number">
+<input class="button-primary" type="submit" value="Multiply" id="multiplyBttn">
+<input  class="button-primary" type="submit" value="Divide" id="divideBttn">
+<p class="message"></p>
+</div>
+    </div>
+</code></pre>
     <script src="app.js"></script>
 </body>
 </html>
